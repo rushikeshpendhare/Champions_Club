@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Champions Club</title>
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css"> 
+  
+    <!-- <link rel="stylesheet" href="stylees.css"> -->
+   <!-- <link rel="stylesheet" href="stylees.css"> -->
+</head>
+<body>
+  <div> <audio loop autoplay src="Sports Music.mp3"></audio> </div>
+   <header>
+     <div class="hero">
+        <nav>
+          <img src="logo.png" class="logo" alt="logo">
+          <ul>
+            <li><a href="#home" class="active">HOME</a></li>
+            <li><a href="#blog">BLOG</a></li>
+            <li><a href="#store">STORE</a></li>
+            <li><a href=#event>EVENT</a></li>
+            <!-- <li><a href="#contact">CONTACT</a></li> -->
+          </ul>
+      </nav>
+   </header>
+
+
+
+
+
+                             <style>
+
+                                /* CSS Reset */
+                                    
+                                * {
+                                    margin: 0;
+                                    padding: 0;
+                                    box-sizing: border-box;
+                                }
+
+                                body, html {
+                                    width: 100%;
+                                    height: 100%;
+                                    scroll-behavior: smooth;
+                                    font-family Arial, sans-serif;
+                                    overflow-x: hidden; /* Prevent horizontal scrolling */
+                                }
+
+                                /* Container */
+                                .container {
+                                    position: relative;
+                                    width: 100%;
+                                    height: 100vh;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    overflow: hidden; /* Hide overflow to prevent scrollbars */
+                                }
+
+                                /* Video Container */
+                                .background-clip {
+                                    position: absolute;
+                                    top: 50%; /* Adjust to move the video up or down */
+                                    left: 0;
+                                    width: 100%;
+                                    height: auto;
+                                    transform: translateY(-50%); /* Center vertically */
+                                    object-fit: cover; /* Ensure the video covers the entire container */
+                                    z-index: -1;
+                                }
+
+                                /* Navigation Bar */
+
+                                nav {
+                                    position: absolute;
+                                    top: -50px; /* Adjust as needed */
+                                    left: 10px; /* Adjust as needed */
+                                    right: 20px; /* Adjust as needed */
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    z-index: 1;
+                                }
+
+
+
+
+                                nav ul {
+                                    display: flex;
+                                    list-style: none;
+                                }
+
+                                nav ul li {
+                                    margin-right: 25px; /* Adjust as needed */
+                                }
+
+                                nav ul li a {
+                                    /* text-decoration: none;  */
+                                    color:  #eeeeee;
+                                    font-size: 16px; /* Adjust as needed */
+                                    transition: color 0.3s ease;
+                                }
+
+                                nav ul li a:hover {
+                                    color: #03a9f4;
+                                }
+
+                                /* Logo */
+                                .logo {
+                                    width: 150px; /* Set desired width of the logo */
+                                    margin: 38px 0px 0px ;
+                                }
+
+
+                                /* Content */
+                                .content {
+                                    text-align: center;
+                                    z-index: 1;
+                                    color: white;
+                                }
+
+                                .content h1 {
+                                    font-size: 4em; /* Adjust as needed */
+                                    margin-bottom: 20px;
+                                }
+
+                                /* Explore Button */
+                                .explorebutton {
+                                    margin-top: 20px;
+                                }
+
+
+
+                                button {
+                                    font-size: 1.5em; /* Adjust as needed */
+                                    color: #03a9f4;
+                                    text-decoration: none;
+                                    border: 2px solid #03a9f4;
+                                    padding: 10px 25px;
+                                    border-radius: 30px;
+                                    background-color: transparent;
+                                    cursor: pointer;
+                                    transition: background-color 0.3s ease, color 0.3s ease;
+                                }
+
+                                /* button:hover {  */
+                                /* background-color: #ffffff;   */
+                                /* color: #03a9f4;  */
+
+
+                                button a{
+                                    color: #03a9f4;
+                                }
+
+                                button a:hover{
+                                    /* background-color: #03a9f4; */
+                                    color: white;
+                                    
+                                }
+
+                                
+                                .section {
+                                    position: relative;
+                                    width: 100%;
+                                    height: 100vh;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    overflow: hidden;
+                                }
+                                .background-clip {
+                                    position: absolute;
+                                    top: 50%; /* Adjust to move the video up or down */
+                                    left: 0;
+                                    width: 100%;
+                                    height: auto;
+                                    transform: translateY(-50%); /* Center vertically */
+                                    object-fit: cover; /* Ensure the video covers the entire container */
+                                    z-index: -1;
+                                    
+                                }
+                                a{
+                                    text-decoration-line: none;
+                                }
+
+                                </style>
+  
+   
+   
+   
+   <div class="container" id="home">
+      <video autoplay loop muted plays-inline class="background-clip" height="650p">
+         <source src="blog.mp4"> 
+      </video>
+      
+      
+      <div class="content">
+         <h1>say hello to the Club</h1>
+         <div class="explorebutton">
+             <button > <a href="">Explore</a></button>
+         </div>
+      </div>
+   </div>
+
+   <div class="section" id="blog">
+      
+      <!-- <h1>BLOG Section</h1> -->
+      <!-- Your blog content here -->
+    <!-- <img src="peopleb.jpg" alt="image" height="740">   -->
+
+    <!-- below code was copy for the testing purpose and img line is commented remember that -->
+
+      <!-- Blog Section -->
+    <section id="blog" class="blog-section">
+      <video autoplay loop muted class="background-clip" height="650"> <source src="readmore.mp4" > </video>
+      <h2>Blog Posts</h2>
+      <div class="blog-posts">
+          <div class="post">
+              <img src="blog3.jpg" alt="Post 1">
+              <div class="post-content">
+                  <h3>Ronaldo's Legacy</h3>
+                  <p> Explore Ronaldo's remarkable career,from....</p>
+                  <a href="#">Read More</a>
+              </div>
+          </div>
+          <div class="post">
+              <img src="blog1.jpg" alt="Post 2">
+              <div class="post-content">
+                  <h3>Neymar's Journey</h3>
+                  <p> Follow Neymar's rise from prodigy to international....</p>
+                  <a href="#">Read More</a>
+              </div>
+          </div>
+          <div class="post">
+              <img src="blog2.jpg" alt="Post 3">
+              <div class="post-content">
+                  <h3>Mbappe's Ascension</h3>
+                  <p>Explore Mbappe's meteoric rise in the world...</p>
+                  <a href="#">Read More</a>
+              </div>
+          </div>
+          <div class="post">
+            <img src="blog4.jpg" alt="Post 4">
+            <div class="post-content">
+                <h3> Messi's Mastery</h3>
+                <p>Discover Messi's brilliance on and off the.... </p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+      </div>
+  </section>
+
+
+                                    <style>
+                                                /* Example Styles for Blog Section */
+                                    .blog-section {
+                                        padding: 10px 5px;
+                                        text-align: center;
+                                        background-color: transparent;
+                                    }
+
+                                    .blog-section h2 {
+                                        font-size: 2.3em;
+                                        margin-bottom: 10px;
+                                        color: #ffffff;
+                                    }
+
+                                    .blog-posts {
+                                        display: flex;
+                                        justify-content: center;
+                                        gap: 20px;
+                                        flex-wrap: wrap;
+                                    }
+
+                                    .post {
+                                        position: relative;
+                                        width: 270px;
+                                        margin-bottom: 20px;
+                                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                                        transition: transform 0.3s ease;
+                                        border-radius: 15px;
+                                        overflow: hidden; 
+                                        background-color: rgba(255, 255, , 0.8);
+                                        box-shadow: 0px 9px 9px rgba(0, 0, 0, 0.9);
+                                        
+                                    }
+
+                                    .post:hover {
+                                        transform: translateY(-10px);
+                                    }
+
+                                    .post img {
+                                        width: 100%;
+                                        height: 200px;
+                                        object-fit: cover;
+                                        transition: transform 0.3s ease;
+                                    }
+
+                                    .post:hover img {
+                                        transform: scale(1.2);
+                                    }
+
+                                    .post-content {
+                                        padding: 20px;
+                                    }
+
+                                    .post h3 {
+                                        font-size: 1.8em;
+                                        margin-bottom: 10px;
+                                        color:#FFFFFF;
+                                    }
+
+                                    .post p {
+                                        font-size: 1.2em;
+                                        line-height: 1.6;
+                                        color: #e8bc5f;
+                                    }
+
+                                    .post a {
+                                        display: inline-block;
+                                        margin-top: 15px;
+                                        padding: 10px 20px;
+                                        color: white;
+                                        background-color: #3eb6ee;
+                                        text-decoration: none;
+                                        border-radius: 9px;
+                                        transition: background-color 0.3s ease;
+                                    }
+
+                                    .post a:hover {
+                                        background-color: #0288d1;
+                                    }
+
+                                    /* above code use for testing purpose */
+
+
+
+                                    /* .about-section{
+                                        
+                                        text-align: center;
+                                        
+                                        font-family: Arial, sans-serif;
+                                    }
+                                    */
+                                    .abc {
+                                        /* General Styles */
+                                    
+                                        font-family Arial, sans-serif;
+                                        margin: 0;
+                                        padding: 30px;
+                                        background-color: #f5f5f5;
+                                        color: #333;
+                                        text-align: center;
+                                        background-image: url(fifastore.avif);
+                                        background-size: cover;
+                                    }
+
+                                    /* Header Styles */
+                                    header {
+                                        /* background-color: #03a9f4; */
+                                        color: rgb(0, 0, 0);
+                                        /* padding: 20px 0; */
+                                        /* margin-bottom: 30px; */
+                                    }
+
+                                    header h1 {
+                                        margin: 0;
+                                        font-size: 2.5em;
+                                    }
+
+
+                                    </style>
+
+
+  <!-- above code was copy from the other working tab for testing script to blog section -->
+
+    
+   </div>
+
+   <div class="about-section" id="store">
+       <div class="abc">
+        <h1>Fifa Store</h1> 
+       <section class="shop-items swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide shop-item">
+                <img src="shopautograph.jpg" alt="Soccer Jersey">
+                <h3> Messi Autograph</h3>
+                <p class="price">₹ 8499\-</p>
+                <p>Rare,certified,collectors item</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            
+            <div class="swiper-slide shop-item">
+                <img src="shopshoe.jpg" alt="Shoe">
+                <h3>Shoe</h3>
+                <p class="price">₹ 2999\-</p>
+                <p>Comfortable,stylish,durable.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="swiper-slide shop-item">
+                <img src="shopbag.jpg" alt="bag">
+                <h3>Bag</h3>
+                <p class="price">₹ 1999\-</p>
+                <p>Spacious,durable,versatile.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="swiper-slide shop-item">
+                <img src="shopnecklace2.jpg" alt="necklace">
+                <h3>Jewelry</h3>
+                <p class="price">₹ 1699\-</p>
+                <p>Elegant,stylish,customizable.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="swiper-slide shop-item">
+                <img src="shopjer.jpg" alt="Soccer Jersey">
+                <h3>Soccer Jersey</h3>
+                <p class="price">₹ 2499\-</p>
+                <p>Breathable,authentic,stylish.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="swiper-slide shop-item">
+                <img src="shopcap2.jpg" alt="cap">
+                <h3>Hat</h3>
+                <p class="price">₹ 1299\</p>
+                <p>Stylish,adjustable,sporty.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="swiper-slide shop-item">
+                <img src="shopdvd.jpg" alt="dvd">
+                <h3>DVD</h3>
+                <p class="price">₹ 1899\</p>
+                <p>High-quality,collectible,exclusive.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="swiper-slide shop-item">
+                <img src="shopgaurd.jpg" alt="guard">
+                <h3>Protector</h3>
+                <p class="price">₹ 1799\-</p>
+                <p>Protective,durable,essential.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div> 
+             <div class="swiper-slide shop-item">
+                <img src="shopwatch.jpg" alt="watch">
+                <h3>Timepiece</h3>
+                <p class="price">₹ 2199\-</p>
+                <p>Elegant, functional, timeless.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div> 
+            <div class="swiper-slide shop-item">
+                <img src="shopcap.jpg" alt="cap">
+                <h3>Cap</h3>
+                <p class="price">₹ 1199\-</p>
+                <p>Stylish,adjustable,sporty.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div> 
+            <div class="swiper-slide shop-item">
+                <img src="shophodi.jpg" alt="hoddie">
+                <h3>Sweatshirt</h3>
+                <p class="price">₹ 2499\-</p>
+                <p>Comfortable,stylish,sporty</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="swiper-slide shop-item">
+                <img src="shopnewbag.jpg" alt="bag">
+                <h3>Bag</h3>
+                <p class="price">₹ 1799\-</p>
+                <p>Durable,spacious,versatile.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="swiper-slide shop-item">
+                <img src="shopball2.jpg" alt="ball">
+                <h3>Soccer Ball</h3>
+                <p class="price">₹ 2999\-</p>
+                <p>high-quality,stylish,sporty</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="swiper-slide shop-item">
+                <img src="shopwristband.jpg" alt="wristband">
+                <h3>Wristband</h3>
+                <p class="price">₹ 1599\-</p>
+                <p>Sporty, absorbent, adjustable</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            
+            <div class="swiper-slide shop-item">
+                <img src="shopband.jpg" alt="band">
+                <h3>Accessory</h3>
+                <p class="price">₹ 999\-</p>
+                <p>Supportive, stylish, durable.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="swiper-slide shop-item">
+                <img src="shopbottel.jpg" alt="bottel">
+                <h3>Hydration</h3>
+                <p class="price">₹ 849\-</p>
+                <p>Durable,eco-friendly,portable.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="swiper-slide shop-item">
+                <img src="shopgloves.jpg" alt="gloves">
+                <h3>Gloves</h3>
+                <p class="price">₹ 1299\-</p>
+                <p>Protective,comfortable,versatile.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="swiper-slide shop-item">
+                <img src="shophod.jpg" alt="hoddie">
+                <h3>Hoodie</h3>
+                <p class="price">₹ 2499\-</p>
+                <p>Comfortable,stylish,sporty..</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="swiper-slide shop-item">
+                <img src="shopcover.jpg" alt="cover">
+                <h3>Case</h3>
+                <p class="price">₹ 1299\-</p>
+                <p>Protective,stylish,sporty.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="swiper-slide shop-item">
+                <img src="shopneckless.jpg" alt="necklace">
+                <h3>Jewelry</h3>
+                <p class="price">₹ 999\-</p>
+                <p>Elegant,stylish,sporty.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="swiper-slide shop-item">
+                <img src="shopsho.jpg" alt="shoes">
+                <h3>Soccer Shoes</h3>
+                <p class="price">₹ 3499\-</p>
+                <p>Durable,agile,performance-enhancing.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+         </div>
+    </section>
+
+
+
+                                                        <style>
+                                                            /* Shop Items Section */
+                                                    .shop-items {
+                                                        width: 85%;
+                                                        margin: 0 auto;
+                                                        overflow: hidden;
+                                                        padding: 23.2px;
+                                                        
+                                                    }
+
+
+                                                    .swiper-wrapper {
+                                                        display: flex;
+                                                    }
+
+                                                    .shop-item {
+                                                        border: black;
+                                                        border-radius: 20px;
+                                                        box-shadow: 0 4px 8px rgba(0, 20, 50, 100);
+                                                        overflow: hidden;
+                                                        width: 300px;
+                                                        transition: transform 0.3s ease, box-shadow 0.3s ease;
+                                                        cursor: pointer;
+                                                        margin: 10px;
+                                                    }
+
+                                                    .shop-item:hover {
+                                                        transform: translateY(-10px);
+                                                        box-shadow: 0 8px 16px rgba(0, 0, 0, 1);
+                                                    }
+
+                                                    /* Shop Item Image */
+                                                    .shop-item img {
+                                                        width: 100%;
+                                                        height: 200px;
+                                                        object-fit: cover;
+                                                        transition: transform 0.3s ease;
+                                                    }
+
+                                                    .shop-item:hover img {
+                                                        transform: scale(1.1);
+                                                    }
+
+                                                    /* Shop Item Content */
+                                                    .shop-item h3 {
+                                                        font-size: 1.5em;
+                                                        margin: 15px 0 10px;
+                                                        color:#000000;
+                                                        font-weight: bold
+                                                    }
+
+                                                    .shop-item .price {
+                                                        font-size: 1.2em;
+                                                        color: #32CD32;
+                                                        margin: 10px 0;
+                                                    }
+
+                                                    .shop-item p {
+                                                        font-size: 1em;
+                                                        color: #333333;
+                                                        padding: 0 15px;
+                                                        margin: 10px 0;
+                                                    }
+
+                                                    /* Add to Cart Button */
+                                                    .add-to-cart {
+                                                        background-color: #03a9f4;
+                                                        color: white;
+                                                        border: none;
+                                                        border-radius: 5px;
+                                                        padding: 10px 20px;
+                                                        margin: 15px 0;
+                                                        cursor: pointer;
+                                                        transition: background-color 0.3s ease, transform 0.3s ease;
+                                                    }
+
+                                                    .add-to-cart:hover {
+                                                        background-color: #0288d1;
+                                                        transform: translateY(-5px);
+                                                    }
+                                                        </style>
+
+                                                        <script>
+                                                            document.addEventListener('DOMContentLoaded', function () {
+                                                                var swiper = new Swiper('.swiper-container', {
+                                                                loop: true, // Enable continuous loop mode
+                                                                autoplay: {
+                                                                    delay: 1600, // Delay between slides
+                                                                    disableOnInteraction: false, // Continue autoplay after user interactions
+                                                                },
+                                                                pagination: {
+                                                                    el: '.swiper-pagination',
+                                                                    clickable: true,
+                                                                },
+                                                                navigation: {
+                                                                    nextEl: '.swiper-button-next',
+                                                                    prevEl: '.swiper-button-prev',
+                                                                },
+                                                                slidesPerView: 3,
+                                                                spaceBetween: 20,
+                                                                });
+                                                                });
+                                                        </script>
+                                  
+
+
+</div>
+    </div>
+
+
+    <div class="event" id="event">
+        <!-- <h1>Event Section</h1> -->
+
+        <!-- <video autoplay loop muted class="background-clip" height="650"><source src="eventback.mp4"></video>
+    </div> -->
+
+    
+
+
+   <div class="section" id="contact">
+
+
+                                                        <style>
+                                                            /* General Styles */
+                                                            body {
+                                                                font-family: 'Arial', sans-serif;
+                                                                margin: 0;
+                                                                padding: 0;
+                                                                /* background-color: #f4f4f9; */
+                                                                /* color: #333; */
+                                                            }
+
+                                                            header {
+                                                                /* background-color: #004080; */
+                                                                color: rgb(255, 255, 255);
+                                                                /* padding-top: 1em ; */
+                                                                text-align: center;
+                                                                /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+                                                            }
+
+                                                            h1 {
+                                                                margin: 0;
+                                                                font-size: 2em;
+                                                            }
+
+                                                            .events {
+                                                                padding: 2em;
+                                                                display: grid;
+                                                                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                                                                gap: 2.5em;
+                                                            }
+
+                                                            /* .event {
+                                                                /* background-color: transparent; */
+                                                                /* border-radius: 10px; */
+                                                                /* padding: 1.5em; */
+                                                                /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+                                                                /* transition: transform 0.2s, box-shadow 0.2s; */
+                                                                /* display: flex; */
+                                                                /* flex-direction: column; */
+                                                                /* justify-content: space-between; */
+                                                            /* } */
+
+                                                            /* .event:hover { */
+                                                                /* transform: translateY(-10px); */
+                                                                /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+                                                            /* }  */
+
+                                                            .event h2 {
+                                                                margin: 0 0 0.5em 0;
+                                                                color: #60a5ea;
+                                                            }
+                                                            
+
+                                                            .event p {
+                                                                margin: 0.5em 0;
+                                                                color:  gray;
+                                                            } 
+
+                                                            .event .event-date,
+                                                            .event .event-location {
+                                                                font-weight: bold;
+                                                                margin: 0.5em 0;
+                                                                color: #e5dbdb;
+                                                            }
+                                                         </style>
+
+
+</head>
+<body>
+    <header>
+        <h1>Upcoming Events</h1>
+    </header>
+
+    <section class="events">
+        <div class="event">
+            <h2>Durand Cup</h2>
+            <p class="event-date">Date: July 26, 2024</p>
+            <p class="event-location">Location: Various stadiums across India</p>
+            <p>Description: The Durand Cup is the oldest football competition in India and Asia, and it marks the beginning of the 2024-25 Indian football season​ (Paris 2024 Olympics)​.</p>
+        </div>
+
+        <div class="event">
+            <h2>Indian Super League (ISL)</h2>
+            <p class="event-date">Date: September 2024 (exact date TBA)</p>
+            <p class="event-location">Location: Various stadiums across India</p>
+            <p>Description: The Indian Super League is India's top-tier football league, entering its 11th season this year​ (Paris 2024 Olympics)​.</p>
+        </div>
+
+        <div class="event">
+            <h2>Santosh Trophy</h2>
+            <p class="event-date">Date: November-December 2024</p>
+            <p class="event-location">Location: Various locations in India</p>
+            <p>Description: The Santosh Trophy is the premier men's National Football Championship of India, featuring teams from different states and government institutions​ (Paris 2024 Olympics)​.</p>
+        </div>
+       
+    </section>
+    
+    
+      
+         <video autoplay loop muted plays-inline class="background-clip" height="650"><source src="contactback.mp4"></video>
+   </div>  
+
+
+
+
+   <footer>
+      <nav>
+         <ul>
+           
+         </ul>
+      </nav>
+   </footer>
+     
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   <script src="script.js"></script>
+
+    <script src="script.js"></script>
+    <!-- <footer>
+        <p>&copy; 2024 Champions Club.  All Rights Reserved.</p>
+    </footer> -->
+   
+    
+</body>
+</html>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                  
+
